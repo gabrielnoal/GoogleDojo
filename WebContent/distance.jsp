@@ -13,9 +13,9 @@
   </head>
   <body>
  <%String place_id = request.getParameter("place_id");
+
  String url = "https://www.google.com/maps/embed/v1/directions?origin=insper&destination=place_id:"+place_id+"&key=AIzaSyCU-mIf-cF35xJTMDT3rVmdss7tDAFsVL8";%>
-<iframe width="600" height="450" frameborder="0" style="border:0"
-src=<%=url%> allowfullscreen></iframe>
+<iframe width="600" height="450" frameborder="0" style="border:0" src=<%=url%> allowfullscreen></iframe>
   </body>
 </html>
 

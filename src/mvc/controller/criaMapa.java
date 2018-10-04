@@ -25,10 +25,13 @@ public class criaMapa extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
+//	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		// TODO Auto-generated method stub
+//		String place_id = (request.getParameter("place_id"));
+//		System.out.println(place_id);
+//		request.setAttribute("place_id", place_id);
+//		request.getRequestDispatcher("distance.jsp").forward(request, response);
+//	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -38,15 +41,10 @@ public class criaMapa extends HttpServlet {
 //		doGet(request, response);
 		
 		String place_id = (request.getParameter("place_id"));
-
-		
-		
+		System.out.println(place_id);
 		request.setAttribute("place_id", place_id);
 		request.getRequestDispatcher("distance.jsp").forward(request, response);
 		
-		
-		
-
 		
 	}
 

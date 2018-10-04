@@ -91,9 +91,9 @@
   <body>
     <h2>Qual a distância do insper?</h2>    
     
-    <form action="criaMapa">
+    <form action="criaMapa" method="POST">
       Qual a distância do INSPER?<br>
-      <input type="hidden" id="place_id">
+      <input type="hidden" id="place_id" name="place_id">
       <input id="pac-input" class="controls" type="text" placeholder="Digite o endereço">
       <button type="submit" style="border-radius: 50%"><i class="fa fa-arrow-circle-right"></i></button>
     </form> 
