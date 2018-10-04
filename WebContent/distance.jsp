@@ -12,9 +12,10 @@
     </style>
   </head>
   <body>
- 
+ <%String place_id = request.getParameter("place_id");
+ String url = "https://www.google.com/maps/embed/v1/directions?origin=insper&destination=place_id:"+place_id+"&key=AIzaSyCU-mIf-cF35xJTMDT3rVmdss7tDAFsVL8";%>
 <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/directions?origin=insper&destination=place_id:ChIJG_LkcglXzpQRZl3_rZpGgfI&key=AIzaSyCU-mIf-cF35xJTMDT3rVmdss7tDAFsVL8" allowfullscreen></iframe>
+src=<%=url%> allowfullscreen></iframe>
   </body>
 </html>
 
