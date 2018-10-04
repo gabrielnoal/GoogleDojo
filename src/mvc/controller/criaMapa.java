@@ -42,7 +42,7 @@ public class criaMapa extends HttpServlet {
 		
 		
 		request.setAttribute("place_id", place_id);
-		request.getRequestDispatcher("home.jsp").forward(request, response);
+		request.getRequestDispatcher("distance.jsp").forward(request, response);
 		
 		
 		
